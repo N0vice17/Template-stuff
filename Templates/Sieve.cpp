@@ -3,13 +3,26 @@
 * JAY SHREE GANESH
 */
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
-using namespace __gnu_pbds;
 #define ll long long int
 #define MOD 1000000007
-#define ordered_set tree<ll,null_type,less<ll>,rb_tree_tag,tree_order_statistics_node_update>
+vector<ll> sieve(ll n){
+    vector<bool>arr(n + 1,1);
+    arr[0] = 0;
+    arr[1] = 0;
+    for(int i = 2;i * i <= n;i++){
+        if(arr[i]){
+            for(int j = i * 2;j <= n;j += i){
+                arr[j] = 0;
+            }
+        }
+    }
+    vector<ll>arr1;
+    for(int i = 1;i <= n;i++){
+        if(arr[i]) arr1.push_back(i);
+    }
+    return arr1;
+}
 void joyshreeram() {
    
 }
