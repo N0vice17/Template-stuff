@@ -16,14 +16,10 @@ void joyshreeram() {
 int32_t main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    #ifndef ONLINE_JUDGE
-        freopen("in.txt","r",stdin);
-        freopen("out.txt","w",stdout);
-    #endif
-        int t;
-        cin >> t;
-        while (t--) {
-            joyshreeram();
-        }
+    int t = 1;
+    cin >> t;
+    while (t--) {
+        joyshreeram();
+    }
     return 0;
 }
