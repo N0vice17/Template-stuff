@@ -6,7 +6,8 @@
 using namespace std;
 #define ll long long int
 #define MOD 1000000007
-vector<ll> sieve(ll n){
+vector<ll>primes;
+void sieve(ll n){
     vector<bool>arr(n + 1,1);
     arr[0] = 0;
     arr[1] = 0;
@@ -17,11 +18,9 @@ vector<ll> sieve(ll n){
             }
         }
     }
-    vector<ll>arr1;
     for(int i = 1;i <= n;i++){
-        if(arr[i]) arr1.push_back(i);
+        if(arr[i]) primes.push_back(i);
     }
-    return arr1;
 }
 void joyshreeram() {
    

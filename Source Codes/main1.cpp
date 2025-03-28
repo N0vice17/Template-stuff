@@ -11,7 +11,7 @@ using namespace __gnu_pbds;
 #define MOD 1000000007
 #define ordered_set tree<ll,null_type,less<ll>,rb_tree_tag,tree_order_statistics_node_update>
 void joyshreeram() {
-   
+    
 }
 int32_t main() {
     ios::sync_with_stdio(false);
